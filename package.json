@@ -1,0 +1,23 @@
+{
+  "name": "handsfree-ur5",
+  "version": "0.0.1",
+  "description": "Everything you need to control a Universal Robot handsfree through your browser",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node node_modules/http-server/bin/http-server ./client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/labofoz/handsfree-ur5.git"
+  },
+  "author": "Oz Ramos <labofoz@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/labofoz/handsfree-ur5/issues"
+  },
+  "homepage": "https://github.com/labofoz/handsfree-ur5#readme",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
+}

@@ -1,0 +1,93 @@
+* {box-sizing: border-box}
+body {text-align: center;}
+button {padding: 20px}
+h1 small {font-size: 14px}
+
+.glitchButton {
+  position: fixed !important;
+  right: 0;
+}
+
+.handsfree-debugger, .handsfree-debugger > * {
+  width: 250px;
+  height: auto;
+}
+
+.handsfree-debug-wrap {
+  position: relative !important;
+  margin: auto;
+}
+
+/* Fancy checkbox */
+input[type=checkbox] {
+  outline: none;
+  padding: 0;
+  width: 58px;
+  height: 23px;
+  font-size: 11px;
+  line-height: 2;
+  display: inline-block;
+  font-weight: bold;
+  border-radius: 3px;
+  border: 1px solid #B9B9B9;
+  -webkit-appearance: none;
+
+  background-image: -webkit-gradient( 
+    linear, left top, left bottom,
+    color-stop(0, #E8E8E8),
+    color-stop(0.5, #E8E8E8),
+    color-stop(0.5, #FDFDFD),
+    color-stop(1, #FDFDFD)
+  );
+  box-shadow: 0px 1px 2px #AFAFAF inset;
+  color: #7F7F7F;
+}
+
+input[type=checkbox]:checked {
+  background-image: -webkit-gradient( 
+    linear, left top, left bottom,
+    color-stop(0, #367EF8),
+    color-stop(0.5, #367EF8),
+    color-stop(0.5, #66A3F8),
+    color-stop(1, #66A3F8)
+  );
+  box-shadow: 0px 1px 2px #1449A3 inset;
+  color: #fff;
+  text-shadow: 0px -1px 1px #000;
+  border: 1px solid #99B9E8;
+}
+
+input[type=checkbox]:before {
+  content: 'OFF';
+  border-radius: 3px;
+  border-top: 1px solid #F7F7F7;
+  border-right: 1px solid #999999;
+  border-bottom: 1px solid #BABABA;
+  border-left: 1px solid #BDBDBD;
+  background-image: -webkit-gradient( 
+    linear, left top, left bottom,
+    color-stop(0, #D8D8D8),
+    color-stop(1, #FBFBFB)
+  );
+  height: 20px;
+  width: 22px;
+  display: inline-block;
+  text-indent: 27px;
+}
+
+input[type=checkbox]:checked:before {
+  content: 'ON';
+  text-indent: -25px;
+  margin-left: 33px;
+}
+
+
+input.checkbox-connect {width: 130px}
+input.checkbox-connect:before {
+  content: 'DISCONNECTED';
+}
+input.checkbox-connect:checked:before {
+  content: 'CONNECTED';
+  margin-left: 104px;
+  text-indent: -80px;
+}
